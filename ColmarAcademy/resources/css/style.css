@@ -1,0 +1,375 @@
+/* General */
+
+html {
+  font-size: 16px;
+  font-family: Roboto, 'Open Sans', sans-serif;
+}
+
+.mobile {
+  display: none!important;
+}
+
+.desktop {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.gray {
+  background-color: #b0b0b0;
+}
+
+.lightgray {
+  background-color: #f4f4f4;
+}
+
+.threefifths {
+  width: 60%;
+}
+
+
+/* Header */
+
+header {
+  height: 4rem;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+header img {
+  height: 3rem;
+  width: auto;
+  margin-left: 1.5rem;
+}
+
+header span {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+header span:first-child {
+  font-weight: bold;
+  color: #535353;
+}
+
+header span:last-child {
+  color: #b0b0b0;
+}
+
+nav {
+  justify-content: flex-end;
+  padding-right: 1.5rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: #000;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+
+#featured {
+  padding-bottom: 2rem;
+}
+
+/* Content */
+
+#content {
+  position: relative;
+  top: 4rem;
+}
+
+.section-container {
+  flex: 1;
+  margin: 2rem 1.5rem;
+  overflow: hidden;
+}
+
+.section-container img, .section-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#main-cta {
+  width: 25%;
+  font-family: 'Open Sans':
+}
+
+#main-cta h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #434343;
+}
+
+#main-cta p {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  color: #434343;
+}
+
+#main-cta .btn {
+  width: 100%;
+  background-color: #434343;
+  padding: 0.75rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+h2  {
+  font-size: 2rem;
+  padding-top: 2rem;
+  font-weight: bold;
+  color: #434343;
+}
+
+.section-container p {
+  padding: 1.5rem 0;
+  font-style: italic;
+}
+
+.story-container {
+  width: 40%;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.story-container .container {
+  flex-direction: row;
+  align-items: center;
+}
+
+.story-image {
+  width: 35%;
+  padding: 1rem 1.5rem 1rem 1rem;
+  overflow: hidden;
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#featured {
+  align-items: flex-start;
+}
+
+.story-text {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  color: #434343;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.story-text span {
+  padding: 1rem 0 1.25rem 0;
+}
+
+.story-text a {
+  color: #0076a8;
+  text-decoration: none;
+}
+
+#learning h2 {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.tiles {
+  margin: 0 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.tile {
+  width: 32%;
+  background-color: #fff;
+  height: 21rem;
+  display: inline-block;
+}
+
+.tile img {
+  width: 100%;
+  height: auto;
+}
+
+.tile div {
+  padding: 1rem 1rem;
+}
+
+h4  {
+  font-weight: bold;
+  color: #434343;
+  font-size: 1.5rem;
+}
+
+.tile div span {
+  padding: 0.5rem 0;
+  font-weight: 300;
+  display: block;
+}
+
+#thesis h2:first-child {
+  text-align: center;
+}
+
+#thesis .story-container {
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 970px) {
+  #main-cta {
+    width: 30%;
+  }
+
+  #main-cta h1 {
+    font-size: 2rem;
+  }
+
+  #main-cta p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mobile {
+    display: flex!important;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  nav img {
+    height: 2rem;
+  }
+
+  #hero {
+    flex-direction: column;
+  }
+
+  #hero .threefifths {
+    width: 100%;
+  }
+
+  #featured .threefifths {
+    display: none;
+  }
+
+  .story-container {
+    width: 100%;
+  }
+
+  .lightgray {
+    background-color: #fff;
+  }
+
+  #hero .section-container {
+    margin: 0;
+  }
+
+  #main-cta {
+    width: 90%;
+    padding: 2rem 0rem;
+  }
+
+  .tiles {
+    flex-direction: column;
+    padding-bottom: 0;
+    margin: 0 0.25rem;
+  }
+
+  .tile {
+    width: 100%;
+    height: 3.5rem;
+    margin: 0.25rem 0;
+    background-color: #b0b0b0;
+  }
+
+  .tile img, .tile span, .tile p {
+    display: none!important;
+  }
+
+  footer nav {
+    display: none!important;
+  }
+
+  #thesis .story-container, #thesis p {
+    display: none;
+  }
+
+  #thesis .threefifths {
+    display: block;
+    width: 100%;
+  }
+
+  #thesis .section-container {
+    margin: 2rem 0;
+  }
+}
+
+nav a:hover, .btn a:hover {
+  color: #0076a8;
+}
+
+.story-text a:hover {
+  color: #094d6a;
+}
+
+.tile:hover {
+  box-shadow: 0 0 1rem #b0b0b0;
+}
+
+.tile, .story-text a, nav a, .btn a {
+  transition: all 100ms;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  top: 4rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #f4f4f4;
+  font-size: 0.75rem;
+  color: #434343;
+}
+
+footer nav {
+  display: inline;
+  flex: 1;
+  float: right;
+}
